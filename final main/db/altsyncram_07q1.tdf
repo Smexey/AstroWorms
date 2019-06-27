@@ -1,0 +1,35 @@
+--altsyncram ADDRESS_ACLR_A="NONE" ADDRESS_ACLR_B="NONE" ADDRESS_REG_B="CLOCK1" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" CYCLONEII_M4K_COMPATIBILITY="ON" DEVICE_FAMILY="Cyclone III" INDATA_ACLR_A="NONE" LOW_POWER_MODE="AUTO" NUMWORDS_A=1048576 NUMWORDS_B=1048576 OPERATION_MODE="DUAL_PORT" OUTDATA_ACLR_B="NONE" OUTDATA_REG_B="UNREGISTERED" RDCONTROL_ACLR_B="NONE" RDCONTROL_REG_B="CLOCK1" READ_DURING_WRITE_MODE_MIXED_PORTS="DONT_CARE" WIDTH_A=12 WIDTH_B=12 WIDTH_BYTEENA_A=2 WIDTH_BYTEENA_B=2 WIDTHAD_A=20 WIDTHAD_B=20 WRCONTROL_ACLR_A="NONE" address_a address_b clock0 clocken0 data_a q_b wren_a CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 13.1 cbx_altsyncram 2013:10:23:18:05:48:SJ cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_lpm_compare 2013:10:23:18:05:48:SJ cbx_lpm_decode 2013:10:23:18:05:48:SJ cbx_lpm_mux 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ cbx_stratixiii 2013:10:23:18:05:48:SJ cbx_stratixv 2013:10:23:18:05:48:SJ cbx_util_mgl 2013:10:23:18:05:48:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+
+--synthesis_resources = 
+SUBDESIGN altsyncram_07q1
+( 
+	address_a[19..0]	:	input;
+	address_b[19..0]	:	input;
+	clock0	:	input;
+	clocken0	:	input;
+	data_a[11..0]	:	input;
+	q_b[11..0]	:	output;
+	wren_a	:	input;
+) 
+
+BEGIN 
+END;
+--ERROR FILE

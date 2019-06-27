@@ -1,0 +1,52 @@
+--altdpram CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone III" INDATA_ACLR="ON" INDATA_REG="INCLOCK" NUMWORDS=1048576 OUTDATA_ACLR="ON" OUTDATA_REG="UNREGISTERED" RDADDRESS_ACLR="ON" RDADDRESS_REG="OUTCLOCK" RDCONTROL_ACLR="ON" RDCONTROL_REG="OUTCLOCK" WIDTH=12 WIDTHAD=20 WRADDRESS_ACLR="ON" WRADDRESS_REG="INCLOCK" WRCONTROL_ACLR="ON" WRCONTROL_REG="INCLOCK" data inclock inclocken q rdaddress wraddress wren CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 CYCLONEII_M4K_COMPATIBILITY="ON" LOW_POWER_MODE="AUTO"
+--VERSION_BEGIN 13.1 cbx_altdpram 2013:10:23:18:05:48:SJ cbx_altsyncram 2013:10:23:18:05:48:SJ cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_lpm_compare 2013:10:23:18:05:48:SJ cbx_lpm_decode 2013:10:23:18:05:48:SJ cbx_lpm_mux 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ cbx_stratixiii 2013:10:23:18:05:48:SJ cbx_stratixv 2013:10:23:18:05:48:SJ cbx_util_mgl 2013:10:23:18:05:48:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION altsyncram_07q1 (address_a[19..0], address_b[19..0], clock0, clocken0, data_a[11..0], wren_a)
+RETURNS ( q_b[11..0]);
+
+--synthesis_resources = 
+SUBDESIGN dpram_csf1
+( 
+	data[11..0]	:	input;
+	inclock	:	input;
+	inclocken	:	input;
+	q[11..0]	:	output;
+	rdaddress[19..0]	:	input;
+	wraddress[19..0]	:	input;
+	wren	:	input;
+) 
+VARIABLE 
+	altsyncram1 : altsyncram_07q1;
+
+BEGIN 
+	altsyncram1.address_a[] = wraddress[];
+	altsyncram1.address_b[] = rdaddress[];
+	altsyncram1.clock0 = inclock;
+	altsyncram1.clocken0 = inclocken;
+	altsyncram1.data_a[] = data[];
+	altsyncram1.wren_a = wren;
+	q[] = altsyncram1.q_b[];
+	ASSERT (0) 
+	REPORT "ALTDPRAM doesn't support Cyclone III. Trying for best case memory conversions. The power up states will be different for stratix as well as read during write modes"
+	SEVERITY WARNING;
+	ASSERT (0) 
+	REPORT "Must connect clock1 port of altsyncram megafunction when using current set of parameters"
+	SEVERITY ERROR;
+END;
+--ERROR FILE

@@ -1,0 +1,1296 @@
+|Igrica_projekat
+out[0] <= Tasteri:inst6.ENTER
+out[1] <= Tasteri:inst6.ldw
+out[2] <= Tasteri:inst6.down
+out[3] <= Tasteri:inst6.rdw
+out[4] <= Tasteri:inst6.left
+out[5] <= Tasteri:inst6.SPACE
+out[6] <= Tasteri:inst6.right
+out[7] <= Tasteri:inst6.lup
+out[8] <= Tasteri:inst6.up
+out[9] <= Tasteri:inst6.rup
+out[10] <= Tasteri:inst6.A
+out[11] <= Tasteri:inst6.D
+CLK => Tastatura:inst3.CLK
+CLK => Tasteri:inst6.CLK
+PS2_CLK => Tastatura:inst3.PS2_CLK
+PS2_CLK => Tasteri:inst6.PS2_CLK
+PS2_DATA => Tastatura:inst3.PS2_DATA
+
+
+|Igrica_projekat|Tasteri:inst6
+A <= REGX:inst1.data_out[0]
+CLK => REGX:inst1.clk
+CLK => REGX:inst14.clk
+CLK => REGX:inst16.clk
+CLK => REGX:inst21.clk
+CLK => RisingEdge:inst26.CLK
+CLK => REGX:inst22.clk
+CLK => RisingEdge:inst27.CLK
+CLK => REGX:inst30.clk
+CLK => RisingEdge:inst28.CLK
+CLK => REGX:inst34.clk
+CLK => RisingEdge:inst31.CLK
+CLK => REGX:inst38.clk
+CLK => RisingEdge:inst35.CLK
+CLK => REGX:inst42.clk
+CLK => RisingEdge:inst39.CLK
+CLK => REGX:inst59.clk
+CLK => RisingEdge:inst56.CLK
+CLK => REGX:inst63.clk
+CLK => RisingEdge:inst60.CLK
+CLK => REGX:inst67.clk
+CLK => RisingEdge:inst64.CLK
+CLK => REGX:inst71.clk
+CLK => RisingEdge:inst68.CLK
+read_end => inst12.IN0
+read_end => REGX:inst14.ld
+read_end => inst17.IN0
+read_end => inst19.IN0
+read_end => inst23.IN0
+read_end => inst25.IN0
+read_end => inst32.IN0
+read_end => inst36.IN0
+read_end => inst40.IN0
+read_end => inst57.IN0
+read_end => inst61.IN0
+read_end => inst65.IN0
+read_end => inst69.IN0
+info[0] => CMPX:inst.A[0]
+info[0] => CMPX:inst3.A[0]
+info[0] => CMPX:inst555.A[0]
+info[0] => CMPX:inst5.A[0]
+info[0] => CMPX:inst7.A[0]
+info[0] => CMPX:inst9.A[0]
+info[0] => CMPX:inst15.A[0]
+info[0] => CMPX:inst44.A[0]
+info[0] => CMPX:inst46.A[0]
+info[0] => CMPX:inst48.A[0]
+info[0] => CMPX:inst49.A[0]
+info[0] => CMPX:inst50.A[0]
+info[0] => CMPX:inst51.A[0]
+info[1] => CMPX:inst.A[1]
+info[1] => CMPX:inst3.A[1]
+info[1] => CMPX:inst555.A[1]
+info[1] => CMPX:inst5.A[1]
+info[1] => CMPX:inst7.A[1]
+info[1] => CMPX:inst9.A[1]
+info[1] => CMPX:inst15.A[1]
+info[1] => CMPX:inst44.A[1]
+info[1] => CMPX:inst46.A[1]
+info[1] => CMPX:inst48.A[1]
+info[1] => CMPX:inst49.A[1]
+info[1] => CMPX:inst50.A[1]
+info[1] => CMPX:inst51.A[1]
+info[2] => CMPX:inst.A[2]
+info[2] => CMPX:inst3.A[2]
+info[2] => CMPX:inst555.A[2]
+info[2] => CMPX:inst5.A[2]
+info[2] => CMPX:inst7.A[2]
+info[2] => CMPX:inst9.A[2]
+info[2] => CMPX:inst15.A[2]
+info[2] => CMPX:inst44.A[2]
+info[2] => CMPX:inst46.A[2]
+info[2] => CMPX:inst48.A[2]
+info[2] => CMPX:inst49.A[2]
+info[2] => CMPX:inst50.A[2]
+info[2] => CMPX:inst51.A[2]
+info[3] => CMPX:inst.A[3]
+info[3] => CMPX:inst3.A[3]
+info[3] => CMPX:inst555.A[3]
+info[3] => CMPX:inst5.A[3]
+info[3] => CMPX:inst7.A[3]
+info[3] => CMPX:inst9.A[3]
+info[3] => CMPX:inst15.A[3]
+info[3] => CMPX:inst44.A[3]
+info[3] => CMPX:inst46.A[3]
+info[3] => CMPX:inst48.A[3]
+info[3] => CMPX:inst49.A[3]
+info[3] => CMPX:inst50.A[3]
+info[3] => CMPX:inst51.A[3]
+info[4] => CMPX:inst.A[4]
+info[4] => CMPX:inst3.A[4]
+info[4] => CMPX:inst555.A[4]
+info[4] => CMPX:inst5.A[4]
+info[4] => CMPX:inst7.A[4]
+info[4] => CMPX:inst9.A[4]
+info[4] => CMPX:inst15.A[4]
+info[4] => CMPX:inst44.A[4]
+info[4] => CMPX:inst46.A[4]
+info[4] => CMPX:inst48.A[4]
+info[4] => CMPX:inst49.A[4]
+info[4] => CMPX:inst50.A[4]
+info[4] => CMPX:inst51.A[4]
+info[5] => CMPX:inst.A[5]
+info[5] => CMPX:inst3.A[5]
+info[5] => CMPX:inst555.A[5]
+info[5] => CMPX:inst5.A[5]
+info[5] => CMPX:inst7.A[5]
+info[5] => CMPX:inst9.A[5]
+info[5] => CMPX:inst15.A[5]
+info[5] => CMPX:inst44.A[5]
+info[5] => CMPX:inst46.A[5]
+info[5] => CMPX:inst48.A[5]
+info[5] => CMPX:inst49.A[5]
+info[5] => CMPX:inst50.A[5]
+info[5] => CMPX:inst51.A[5]
+info[6] => CMPX:inst.A[6]
+info[6] => CMPX:inst3.A[6]
+info[6] => CMPX:inst555.A[6]
+info[6] => CMPX:inst5.A[6]
+info[6] => CMPX:inst7.A[6]
+info[6] => CMPX:inst9.A[6]
+info[6] => CMPX:inst15.A[6]
+info[6] => CMPX:inst44.A[6]
+info[6] => CMPX:inst46.A[6]
+info[6] => CMPX:inst48.A[6]
+info[6] => CMPX:inst49.A[6]
+info[6] => CMPX:inst50.A[6]
+info[6] => CMPX:inst51.A[6]
+info[7] => CMPX:inst.A[7]
+info[7] => CMPX:inst3.A[7]
+info[7] => CMPX:inst555.A[7]
+info[7] => CMPX:inst5.A[7]
+info[7] => CMPX:inst7.A[7]
+info[7] => CMPX:inst9.A[7]
+info[7] => CMPX:inst15.A[7]
+info[7] => CMPX:inst44.A[7]
+info[7] => CMPX:inst46.A[7]
+info[7] => CMPX:inst48.A[7]
+info[7] => CMPX:inst49.A[7]
+info[7] => CMPX:inst50.A[7]
+info[7] => CMPX:inst51.A[7]
+D <= REGX:inst16.data_out[0]
+SPACE <= RisingEdge:inst26.OUT
+ENTER <= RisingEdge:inst27.OUT
+up <= RisingEdge:inst28.OUT
+down <= RisingEdge:inst31.OUT
+left <= RisingEdge:inst35.OUT
+right <= RisingEdge:inst39.OUT
+lup <= RisingEdge:inst56.OUT
+rup <= RisingEdge:inst60.OUT
+ldw <= RisingEdge:inst64.OUT
+rdw <= RisingEdge:inst68.OUT
+PS2_CLK => ~NO_FANOUT~
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst1
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst14
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst2
+data[0] <= <GND>
+data[1] <= <GND>
+data[2] <= <GND>
+data[3] <= <GND>
+data[4] <= <VCC>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <VCC>
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst3
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst4
+data[0] <= <GND>
+data[1] <= <GND>
+data[2] <= <VCC>
+data[3] <= <VCC>
+data[4] <= <VCC>
+data[5] <= <GND>
+data[6] <= <GND>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst16
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst555
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst556
+data[0] <= <VCC>
+data[1] <= <VCC>
+data[2] <= <GND>
+data[3] <= <GND>
+data[4] <= <GND>
+data[5] <= <VCC>
+data[6] <= <GND>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst26
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst21
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst5
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst6
+data[0] <= <VCC>
+data[1] <= <GND>
+data[2] <= <GND>
+data[3] <= <VCC>
+data[4] <= <GND>
+data[5] <= <VCC>
+data[6] <= <GND>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst27
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst22
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst7
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst8
+data[0] <= <GND>
+data[1] <= <VCC>
+data[2] <= <GND>
+data[3] <= <VCC>
+data[4] <= <VCC>
+data[5] <= <GND>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst28
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst30
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst9
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst10
+data[0] <= <VCC>
+data[1] <= <GND>
+data[2] <= <VCC>
+data[3] <= <GND>
+data[4] <= <VCC>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst31
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst34
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst15
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst43
+data[0] <= <GND>
+data[1] <= <VCC>
+data[2] <= <GND>
+data[3] <= <GND>
+data[4] <= <VCC>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst35
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst38
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst44
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst45
+data[0] <= <VCC>
+data[1] <= <VCC>
+data[2] <= <GND>
+data[3] <= <VCC>
+data[4] <= <GND>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst39
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst42
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst46
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst47
+data[0] <= <GND>
+data[1] <= <GND>
+data[2] <= <VCC>
+data[3] <= <GND>
+data[4] <= <VCC>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst56
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst59
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst48
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst52
+data[0] <= <GND>
+data[1] <= <GND>
+data[2] <= <VCC>
+data[3] <= <VCC>
+data[4] <= <GND>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst60
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst63
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst49
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst53
+data[0] <= <VCC>
+data[1] <= <GND>
+data[2] <= <VCC>
+data[3] <= <VCC>
+data[4] <= <VCC>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst64
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst67
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst50
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst54
+data[0] <= <VCC>
+data[1] <= <GND>
+data[2] <= <GND>
+data[3] <= <VCC>
+data[4] <= <GND>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tasteri:inst6|RisingEdge:inst68
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tasteri:inst6|REGX:inst71
+clk => data[0].CLK
+ld => data_next.OUTPUTSELECT
+cl => data_next[0].OUTPUTSELECT
+inc => data_next.OUTPUTSELECT
+dec => data_next.OUTPUTSELECT
+data_in[0] => data_next.DATAB
+data_out[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CMPX:inst51
+A[0] => Equal0.IN7
+A[0] => LessThan0.IN8
+A[0] => LessThan1.IN8
+A[1] => Equal0.IN6
+A[1] => LessThan0.IN7
+A[1] => LessThan1.IN7
+A[2] => Equal0.IN5
+A[2] => LessThan0.IN6
+A[2] => LessThan1.IN6
+A[3] => Equal0.IN4
+A[3] => LessThan0.IN5
+A[3] => LessThan1.IN5
+A[4] => Equal0.IN3
+A[4] => LessThan0.IN4
+A[4] => LessThan1.IN4
+A[5] => Equal0.IN2
+A[5] => LessThan0.IN3
+A[5] => LessThan1.IN3
+A[6] => Equal0.IN1
+A[6] => LessThan0.IN2
+A[6] => LessThan1.IN2
+A[7] => Equal0.IN0
+A[7] => LessThan0.IN1
+A[7] => LessThan1.IN1
+B[0] => Equal0.IN15
+B[0] => LessThan0.IN16
+B[0] => LessThan1.IN16
+B[1] => Equal0.IN14
+B[1] => LessThan0.IN15
+B[1] => LessThan1.IN15
+B[2] => Equal0.IN13
+B[2] => LessThan0.IN14
+B[2] => LessThan1.IN14
+B[3] => Equal0.IN12
+B[3] => LessThan0.IN13
+B[3] => LessThan1.IN13
+B[4] => Equal0.IN11
+B[4] => LessThan0.IN12
+B[4] => LessThan1.IN12
+B[5] => Equal0.IN10
+B[5] => LessThan0.IN11
+B[5] => LessThan1.IN11
+B[6] => Equal0.IN9
+B[6] => LessThan0.IN10
+B[6] => LessThan1.IN10
+B[7] => Equal0.IN8
+B[7] => LessThan0.IN9
+B[7] => LessThan1.IN9
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ls <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tasteri:inst6|CONSTX:inst55
+data[0] <= <GND>
+data[1] <= <VCC>
+data[2] <= <GND>
+data[3] <= <VCC>
+data[4] <= <VCC>
+data[5] <= <VCC>
+data[6] <= <VCC>
+data[7] <= <GND>
+
+
+|Igrica_projekat|Tastatura:inst3
+read_end <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst39.CLK
+CLK => Debouncer:inst40.CLK
+CLK => RisingEdge:inst29.CLK
+CLK => inst30.CLK
+CLK => inst31.CLK
+CLK => inst32.CLK
+CLK => inst33.CLK
+CLK => inst34.CLK
+CLK => inst35.CLK
+CLK => inst36.CLK
+CLK => inst37.CLK
+PS2_CLK => inst.IN0
+PS2_DATA => inst3.IN0
+PS2_DATA => inst1.DATAIN
+PS2_DATA => inst16.DATAIN
+Podatak[0] <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[1] <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[2] <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[3] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[4] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[5] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[6] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+Podatak[7] <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tastatura:inst3|RisingEdge:inst29
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|Igrica_projekat|Tastatura:inst3|Debouncer:inst40
+OUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => REG1_INC_CL:inst2.clk
+CLK => REG1_INC_CL:inst3.clk
+CLK => REG1_INC_CL:inst4.clk
+IN => inst.DATAIN
+IN => inst6.IN0
+
+
+|Igrica_projekat|Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst2
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inc => inst1.IN0
+inc => inst2.IN1
+inc => inst.IN1
+cl => inst2.IN0
+clk => inst.CLK
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst3
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inc => inst1.IN0
+inc => inst2.IN1
+inc => inst.IN1
+cl => inst2.IN0
+clk => inst.CLK
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Igrica_projekat|Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst4
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+inc => inst1.IN0
+inc => inst2.IN1
+inc => inst.IN1
+cl => inst2.IN0
+clk => inst.CLK
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

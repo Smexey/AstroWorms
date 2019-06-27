@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Igrica_projekat">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Igrica_projekat|Binary2BCD:inst108|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Igrica_projekat|Binary2BCD:inst137|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Igrica_projekat|earthrom:inst77|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kur3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Igrica_projekat|jupytermemrom:inst56|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_t2s3.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

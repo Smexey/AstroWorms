@@ -1,0 +1,828 @@
+Analysis & Synthesis report for Igrica_projekat
+Wed Dec 26 21:13:34 2018
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst1
+ 12. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst14
+ 13. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst
+ 14. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst2
+ 15. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst3
+ 16. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst4
+ 17. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst16
+ 18. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst555
+ 19. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst556
+ 20. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst21
+ 21. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst5
+ 22. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst6
+ 23. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst22
+ 24. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst7
+ 25. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst8
+ 26. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst30
+ 27. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst9
+ 28. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst10
+ 29. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst34
+ 30. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst15
+ 31. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst43
+ 32. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst38
+ 33. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst44
+ 34. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst45
+ 35. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst42
+ 36. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst46
+ 37. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst47
+ 38. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst59
+ 39. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst48
+ 40. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst52
+ 41. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst63
+ 42. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst49
+ 43. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst53
+ 44. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst67
+ 45. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst50
+ 46. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst54
+ 47. Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst71
+ 48. Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst51
+ 49. Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst55
+ 50. Elapsed Time Per Partition
+ 51. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Dec 26 21:13:34 2018      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Igrica_projekat                            ;
+; Top-level Entity Name              ; Igrica_projekat                            ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 99                                         ;
+;     Total combinational functions  ; 50                                         ;
+;     Dedicated logic registers      ; 68                                         ;
+; Total registers                    ; 68                                         ;
+; Total pins                         ; 15                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; Igrica_projekat    ; Igrica_projekat    ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
+; Igrica_projekat.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dp170409/Desktop/projekat za plocicu 2/Igrica_projekat.bdf      ;         ;
+; Tastatura.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dp170409/Desktop/projekat za plocicu 2/Tastatura.bdf            ;         ;
+; Debouncer.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dp170409/Desktop/projekat za plocicu 2/Debouncer.bdf            ;         ;
+; RisingEdge.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dp170409/Desktop/projekat za plocicu 2/RisingEdge.bdf           ;         ;
+; output_files/Tasteri.bdf         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dp170409/Desktop/projekat za plocicu 2/output_files/Tasteri.bdf ;         ;
+; regx.vhd                         ; yes             ; Auto-Found VHDL File                     ; C:/Users/dp170409/Desktop/projekat za plocicu 2/regx.vhd                 ;         ;
+; cmpx.vhd                         ; yes             ; Auto-Found VHDL File                     ; C:/Users/dp170409/Desktop/projekat za plocicu 2/cmpx.vhd                 ;         ;
+; constx.vhd                       ; yes             ; Auto-Found VHDL File                     ; C:/Users/dp170409/Desktop/projekat za plocicu 2/constx.vhd               ;         ;
+; reg1_inc_cl.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dp170409/Desktop/projekat za plocicu 2/reg1_inc_cl.bdf          ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 99        ;
+;                                             ;           ;
+; Total combinational functions               ; 50        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 29        ;
+;     -- 3 input functions                    ; 3         ;
+;     -- <=2 input functions                  ; 18        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 50        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 68        ;
+;     -- Dedicated logic registers            ; 68        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 15        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 49        ;
+; Total fan-out                               ; 342       ;
+; Average fan-out                             ; 2.31      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+; |Igrica_projekat             ; 50 (0)            ; 68 (0)       ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Igrica_projekat                                                    ; work         ;
+;    |Tastatura:inst3|         ; 11 (4)            ; 35 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tastatura:inst3                                    ; work         ;
+;       |Debouncer:inst40|     ; 6 (3)             ; 5 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tastatura:inst3|Debouncer:inst40                   ; work         ;
+;          |REG1_INC_CL:inst2| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst2 ; work         ;
+;          |REG1_INC_CL:inst3| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst3 ; work         ;
+;          |REG1_INC_CL:inst4| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst4 ; work         ;
+;       |RisingEdge:inst29|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tastatura:inst3|RisingEdge:inst29                  ; work         ;
+;    |Tasteri:inst6|           ; 39 (8)            ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6                                      ; work         ;
+;       |CMPX:inst3|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|CMPX:inst3                           ; work         ;
+;       |CMPX:inst555|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|CMPX:inst555                         ; work         ;
+;       |REGX:inst14|          ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst14                          ; work         ;
+;       |REGX:inst16|          ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst16                          ; work         ;
+;       |REGX:inst1|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst1                           ; work         ;
+;       |REGX:inst21|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst21                          ; work         ;
+;       |REGX:inst22|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst22                          ; work         ;
+;       |REGX:inst30|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst30                          ; work         ;
+;       |REGX:inst34|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst34                          ; work         ;
+;       |REGX:inst38|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst38                          ; work         ;
+;       |REGX:inst42|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst42                          ; work         ;
+;       |REGX:inst59|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst59                          ; work         ;
+;       |REGX:inst63|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst63                          ; work         ;
+;       |REGX:inst67|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst67                          ; work         ;
+;       |REGX:inst71|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|REGX:inst71                          ; work         ;
+;       |RisingEdge:inst26|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst26                    ; work         ;
+;       |RisingEdge:inst27|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst27                    ; work         ;
+;       |RisingEdge:inst28|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst28                    ; work         ;
+;       |RisingEdge:inst31|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst31                    ; work         ;
+;       |RisingEdge:inst35|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst35                    ; work         ;
+;       |RisingEdge:inst39|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst39                    ; work         ;
+;       |RisingEdge:inst56|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst56                    ; work         ;
+;       |RisingEdge:inst60|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst60                    ; work         ;
+;       |RisingEdge:inst64|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst64                    ; work         ;
+;       |RisingEdge:inst68|    ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Igrica_projekat|Tasteri:inst6|RisingEdge:inst68                    ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                        ;
++---------------------------------------+-----------------------------------+
+; Register name                         ; Reason for Removal                ;
++---------------------------------------+-----------------------------------+
+; Tastatura:inst3|inst16                ; Merged with Tastatura:inst3|inst1 ;
+; Total Number of Removed Registers = 1 ;                                   ;
++---------------------------------------+-----------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 68    ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 9     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Tasteri:inst6|REGX:inst14|data[0]      ; 15      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 1     ; Signed Integer                               ;
+; default_value  ; 0     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst14 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 1     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; size           ; 8     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst2 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; size           ; 8     ; Signed Integer                                 ;
+; const          ; 240   ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst3 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst4 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; size           ; 8     ; Signed Integer                                 ;
+; const          ; 28    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst16 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst555 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; size           ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst556 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; size           ; 8     ; Signed Integer                                   ;
+; const          ; 35    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst21 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst5 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst6 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; size           ; 8     ; Signed Integer                                 ;
+; const          ; 41    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst22 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst7 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst8 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; size           ; 8     ; Signed Integer                                 ;
+; const          ; 90    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst30 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst9 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst10 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 117   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst34 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst15 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst43 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 114   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst38 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst44 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst45 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 107   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst42 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst46 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst47 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 116   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst59 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst48 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst52 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 108   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst63 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst49 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst53 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 125   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst67 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst50 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst54 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 105   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|REGX:inst71 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 1     ; Signed Integer                                ;
+; default_value  ; 0     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CMPX:inst51 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Tasteri:inst6|CONSTX:inst55 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 8     ; Signed Integer                                  ;
+; const          ; 122   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Dec 26 21:13:31 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Igrica_projekat -c Igrica_projekat
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file igrica_projekat.bdf
+    Info (12023): Found entity 1: Igrica_projekat
+Info (12021): Found 1 design units, including 1 entities, in source file add16.bdf
+    Info (12023): Found entity 1: ADD16
+Info (12021): Found 1 design units, including 1 entities, in source file add10.bdf
+    Info (12023): Found entity 1: ADD10
+Info (12021): Found 1 design units, including 1 entities, in source file tastatura.bdf
+    Info (12023): Found entity 1: Tastatura
+Info (12021): Found 1 design units, including 1 entities, in source file debouncer.bdf
+    Info (12023): Found entity 1: Debouncer
+Info (12021): Found 1 design units, including 1 entities, in source file risingedge.bdf
+    Info (12023): Found entity 1: RisingEdge
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/tasteri.bdf
+    Info (12023): Found entity 1: Tasteri
+Info (12021): Found 1 design units, including 1 entities, in source file igrac.bdf
+    Info (12023): Found entity 1: Igrac
+Info (12021): Found 1 design units, including 1 entities, in source file metak.bdf
+    Info (12023): Found entity 1: Metak
+Info (12127): Elaborating entity "Igrica_projekat" for the top level hierarchy
+Info (12128): Elaborating entity "Tasteri" for hierarchy "Tasteri:inst6"
+Warning (275009): Pin "PS2_CLK" not connected
+Warning (275008): Primitive "OR12" of instance "inst72" not used
+Warning (275008): Primitive "DFF" of instance "inst92" not used
+Warning (12125): Using design file regx.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: REGX-rtl
+    Info (12023): Found entity 1: REGX
+Info (12128): Elaborating entity "REGX" for hierarchy "Tasteri:inst6|REGX:inst1"
+Info (12128): Elaborating entity "REGX" for hierarchy "Tasteri:inst6|REGX:inst14"
+Warning (12125): Using design file cmpx.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: CMPX-rtl
+    Info (12023): Found entity 1: CMPX
+Info (12128): Elaborating entity "CMPX" for hierarchy "Tasteri:inst6|CMPX:inst"
+Warning (12125): Using design file constx.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: CONSTX-rtl
+    Info (12023): Found entity 1: CONSTX
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst2"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst4"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst556"
+Info (12128): Elaborating entity "RisingEdge" for hierarchy "Tasteri:inst6|RisingEdge:inst26"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst6"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst8"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst10"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst43"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst45"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst47"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst52"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst53"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst54"
+Info (12128): Elaborating entity "CONSTX" for hierarchy "Tasteri:inst6|CONSTX:inst55"
+Info (12128): Elaborating entity "Tastatura" for hierarchy "Tastatura:inst3"
+Warning (275008): Primitive "DFF" of instance "inst25" not used
+Warning (275008): Primitive "DFFE" of instance "inst28" not used
+Warning (275008): Primitive "DFFE" of instance "inst38" not used
+Info (12128): Elaborating entity "Debouncer" for hierarchy "Tastatura:inst3|Debouncer:inst40"
+Warning (12125): Using design file reg1_inc_cl.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: REG1_INC_CL
+Info (12128): Elaborating entity "REG1_INC_CL" for hierarchy "Tastatura:inst3|Debouncer:inst40|REG1_INC_CL:inst2"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 115 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 100 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4684 megabytes
+    Info: Processing ended: Wed Dec 26 21:13:34 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
